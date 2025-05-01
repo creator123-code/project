@@ -1,0 +1,1 @@
+export function euler(f, x0, y0, h, steps) { const results = [{ x: x0, y: y0 }]; for (let i = 0; i < steps; i++) { y0 = y0 + h * f(x0, y0); x0 = x0 + h; results.push({ x: x0, y: y0 }); } return results; }

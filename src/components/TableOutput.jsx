@@ -1,0 +1,1 @@
+function TableOutput({ data }) { return (<table><thead><tr><th>x</th><th>y</th></tr></thead><tbody>{data.map((row, idx) => (<tr key={idx}><td>{row.x.toFixed(2)}</td><td>{row.y.toFixed(2)}</td></tr>))}</tbody></table>); } export default TableOutput;

@@ -1,0 +1,1 @@
+import Plot from 'react-plotly.js'; function GraphPlot({ data }) { return <Plot data={[{x: data.map(d => d.x), y: data.map(d => d.y), type: 'scatter', mode: 'lines+markers'}]} layout={{title: 'Solution'}} />; } export default GraphPlot;
